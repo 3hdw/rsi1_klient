@@ -8,14 +8,7 @@ public class AC implements AsyncCallback {
 
     @Override
     public void handleResult(Object result, URL url, String method) {
-        System.out.println("Wykonano pomyslnie");
-        if(result.equals("-1")) {
-            System.out.println("Nie ma takiego znaku w słowie");
-        }
-        else {
-            System.out.println("Znak znajduje się w słowie");
-
-        }
+        System.out.println("ODPOWIEDŹ ASYNC: "+(String) result);
     }
 
     @Override
